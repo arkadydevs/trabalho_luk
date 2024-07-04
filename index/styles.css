@@ -1,0 +1,42 @@
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    background-image: url(https://s1.static.brasilescola.uol.com.br/be/2022/06/paisagem-natural-floresta.jpg);
+    background-size: cover; 
+}
+
+header {
+    width: 100%;
+    font-size: 200px;
+    color: black;
+    text-align: center;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative; 
+}
+
+.imagens-galeria {
+    width: 220px;
+    height: 160px;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+    filter: blur(1px);
+    z-index: 1; 
+    position: relative; 
+}
+
+.imagens-galeria:hover {
+    transform: translate(-3%, 3%) scale(2);
+    filter: blur(0px);
+    z-index: 10; 
+}
