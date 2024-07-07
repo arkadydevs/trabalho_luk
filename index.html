@@ -3,10 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trabalho luk</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+        }
+        h1{
+            color: aliceblue;
+        }
+    </style>
 </head>
 <body>
-    ads
-    
+    <h1>Mapa da vila</h1>
+    <img src="/assets/imagens/mapa.png" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="" alt="" title="" href="" coords="407,461,310,422,308,369,336,329,363,302,391,305,444,317,470,331,488,352,498,375,502,397,502,421,497,441,488,450,463,458,447,463" shape="poly">
+        <area target="" alt="" title="" href="/centro.html" coords="149,464,86,454,51,441,45,387,62,356,82,333,104,309,140,301,177,307,203,319,224,329,247,339,256,348,267,371,276,397,275,419,267,439,239,454,202,463" shape="poly">
+        <area target="" alt="" title="" href="" coords="95,619,56,586,36,554,52,516,67,494,118,494,140,495,195,505,222,512,240,522,262,537,280,568,264,595,247,611,211,617,176,621" shape="poly">
+        <area target="" alt="" title="" href="" coords="92,286,55,269,39,234,38,208,43,188,56,180,102,178,138,177,186,177,234,173,251,172,273,179,286,206,292,233,278,265,238,281,196,287,163,288,140,290" shape="poly">
+        <area target="" alt="" title="" href="" coords="401,615,375,590,366,562,371,532,382,507,404,486,432,478,452,474,472,478,492,501,502,526,494,573,482,607,454,614,436,617" shape="poly">
+        <area target="" alt="" title="" href="" coords="100,166,69,148,47,110,64,72,86,46,137,25,189,7,247,8,281,15,295,34,288,67,257,117,167,125,134,162" shape="poly">
+    </map>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+    <script>
+        window.onload = function() {
+            imageMapResize();
+        };
+    </script>
 </body>
 </html>
