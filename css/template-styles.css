@@ -5,6 +5,7 @@ html, body {
     width: 100%;
     height: 100%;
 }
+
 header {
     width: 100%;
     font-size: 200px;
@@ -38,7 +39,18 @@ header p {
 
 .personagem {
     height: 70%;
-    justify-content: last baseline;
+    animation: moveUpDown 2s infinite alternate;
+    z-index: 1;
+    
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-25px);
+    }
 }
 
 .quadros img {
@@ -73,10 +85,60 @@ header p {
 
 
 .quadros img:hover {
-    transform: translate(-3%, 3%) scale(2);
+    transform: translate(-3%, 3%) scale(1.7);
     filter: blur(0px);
     z-index: 10;
     box-shadow: 0px 0px 20px gold;
+}
+
+@media (max-width: 1668px) {
+
+    header p {
+        font-size: 0.8rem;
+    }
+
+    #menu div img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .quadros img:hover {
+        transform: translate(-3%, 3%) scale(1.2);
+
+    }
+
+
+}
+@media (max-width: 768px) {
+    header {
+        font-size: 100px;
+        height: 4rem;
+    }
+
+    header p {
+        font-size: 0.8rem;
+    }
+
+    #menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #menu div img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .imagens-galeria-1, .imagens-galeria-2, .imagens-galeria-3, .imagens-galeria-4 {
+        margin: 0.5rem 1rem;
+        transform: none;
+    }
+
+    #menu div img:hover {
+        transform: none;
+        filter: none;
+        box-shadow: none;
+    }
 }
 
 @media (max-width: 768px) {
