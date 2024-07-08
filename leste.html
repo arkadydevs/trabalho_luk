@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura</title>
+    <link rel="stylesheet" href="css/template-styles.css">
+</head>
+<style>
+    #leste{
+        width: 50%;
+    }
+    body{
+        background-color: black;
+
+    }
+</style>
+<body style="display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0;">
+    <img id="leste" src="/assets/imagens/leste.png" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="" alt="yniphora" title="yniphora" href="/yniphora.html" coords="267,413,268,281,249,285,269,216,305,177,319,165,339,170,347,118,375,118,378,163,592,170,637,224,658,296,639,299,638,415" shape="poly">
+        <area target="" alt="bell" title="bell" href="/bell.html" coords="973,545,969,445,981,350,1180,352,1195,439,1182,548,1107,571,1048,570,1039,542" shape="poly">
+    </map>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+    <script>
+        window.onload = function() {
+            imageMapResize();
+        };
+    </script>
+</body>
+</html>

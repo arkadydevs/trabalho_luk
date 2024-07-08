@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura</title>
+    <link rel="stylesheet" href="css/template-styles.css">
+</head>
+<style>
+    #lago{
+        height: 99%;
+    }
+    body{
+        background-color: black;
+
+    }
+</style>
+<body style="display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0;">
+    <img id="lago" src="/assets/imagens/lago.png" usemap="#image-map">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+    <script>
+        window.onload = function() {
+            imageMapResize();
+        };
+    </script>
+</body>
+</html>

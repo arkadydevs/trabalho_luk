@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura</title>
+    <link rel="stylesheet" href="css/template-styles.css">
+</head>
+<style>
+    #sul{
+        width: 50%;
+    }
+    body{
+        background-color: black;
+
+    }
+</style>
+<body style="display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0;">
+    <img id="sul" src="/assets/imagens/sul.png" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="" alt="casa_de_palha" title="casa_de_palha" href="/casa_de_palha.html" coords="125,660,119,558,149,467,269,447,315,543,305,660" shape="poly">
+        <area target="" alt="casa_de_madeira" title="casa_de_madeira" href="/casa_de_madeira.html" coords="424,470,415,264,406,237,444,191,679,204,707,246,690,459" shape="poly">
+        <area target="" alt="duclair" title="duclair" href="/duclair.html" coords="652,1234,643,1057,721,951,792,953,836,935,867,959,969,961,1027,1043,1026,1230,905,1267,794,1274,929,1232,790,1239" shape="poly">
+        <area target="" alt="padaria" title="padaria" href="/padaria.html" coords="878,707,872,388,1047,334,1164,354,1159,299,1193,295,1192,383,1261,397,1264,711" shape="poly">
+        <area target="" alt="den" title="den" href="/den.html" coords="1624,1032,1605,884,1631,866,1864,829,1866,866,1904,1017,1886,1026,1821,1041" shape="poly">
+    </map>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+    <script>
+        window.onload = function() {
+            imageMapResize();
+        };
+    </script>
+</body>
+</html>
